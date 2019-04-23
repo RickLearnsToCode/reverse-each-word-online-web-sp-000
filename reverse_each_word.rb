@@ -10,7 +10,7 @@ end
 def reverse_each_word(string)
   words = string.split(" ")
   output_array = []
-  words.collect {|word| word.reverse}
+  words = words.collect {|word| word.reverse}
   string = words.join(" ")
   return string
 end
